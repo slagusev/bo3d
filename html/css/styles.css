@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic);
+body{
+	margin				: 0;
+	padding				: 0;
+	background			: #7A2C2C;
+	color				: #000000;
+	font-family			: 'Source Sans Pro', sans-serif;
+	font-size			: 14px;
+	min-height			: 1000px;
+}
+
+body, html{ height : 100%; }
+
+#bg{
+	width				: 100%;
+	height				: 100%;
+	background			: url(../img/tl2.jpg);
+	background-size		: cover;
+}
+
+ul{
+	list-style-type 	: none;
+}
+
+h1, h2, h3, h4{
+	font-weight			: 400;
+}
+
+#page, #header, #main, #footer{
+	display				: block;
+	width				: 1000px;
+	margin				: auto;
+}
+
+#header{
+	height				: 200px;
+}
+
+#left, #content, #right{
+	float				: left;
+	background			: rgba(255, 255, 255, 0.8);
+	border-radius		: 3px;
+	box-shadow			: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+#left, #right{
+	width				: 170px;
+	padding				: 5px;
+	padding-top			: 20px;
+	padding-bottom		: 20px;
+	margin				: 5px;
+}
+#content{
+	width				: 570px;
+	padding				: 20px;
+	margin				: 5px;
+}
+
+.clear{ clear : both; }
+*{ outline : none; }
+
+.status01{ color : #009900; }
+.status02{ color : #ffdd00; }
+.status03{ color : #ff5500; }
+.status04{ color : #990000; }
+.status05{ color : #9900ff; }
+
+.text_shadow{ text-shadow : 1px 1px 0px #000000; }
+.horizontal_list{
+	margin				: 0;
+	padding				: 0;
+}
+
+.horizontal_list li{
+	display				: inline-block;
+	padding				: 5px;
+}
+
+.flat_list{
+	padding				: 0;
+	margin				: 0;
+}
+
+#complete_list li{ cursor : pointer; }
+#complete_list li li{ cursor : default; }
+#complete_list > li:hover{
+	text-shadow			: 0px 0px 5px #ffdd00;
+}
+
+#complete_list > li li{
+	text-shadow			: none;
+}
+
+.small{ font-size : 10px; }

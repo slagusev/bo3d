@@ -1,0 +1,126 @@
+09-25-2012 - v0.19
+added		: TMesh.CountChildren()
+added		: CountChildren()
+fixed		: Prefabs skalieren nun exakt so wie in Blitz3D
+fixed		: die Z-Achse wird nun behandelt wie in Blitz3D
+fixed		: fehlerhafte Positionierung von Entities bei bestimmten "Konstellationen"
+
+
+09-24-2012 - v0.18
+added		: TMesh.CreatePrefab()
+added		: TMesh.CreateCube()
+added		: TMesh.CreateSphere()
+added		: TMesh.CreatePlane()
+added		: CreateCube()
+added		: CreateSphere()
+added		: CreatePlane()
+fixed		: die AspectRatio des Viewports wird nun korrekt berechnet.
+fixed		: neue Cameras werden nun mit korrekter Range erzeugt
+
+
+09-18-2012 - v0.17
+added		: TOgre.MouseHit()
+added		: MouseHit()
+changed		: Input-Events werden jetzt in RenderWorld() in Buffer gesichert
+changed		: Es ist nun zwingend bo3D als Framework in BMax zu verwenden
+changed		: [TOgre.]getMouseZSpeed() heißt jetzt MouseZSpeed()
+changed		: [TOgre.]isMouseDown() heißt jetzt MouseDown()
+fixed		: Resource-Locations werden nicht mehr mehrfach in die Liste der Locations eingetragen
+
+
+09-14-2012 - v0.16
+added		: TEntity.FreeEntity()
+added		: TEntity.ShowEntity()
+added		: TEntity.HideEntity()
+added		: TOgre.TrisRendered()
+added		: TMesh.LoadAnimMesh()
+added		: FreeEntity(entity%)
+added		: ShowEntity(entity%)
+added		: HideEntity(entity%)
+added		: TrisRendered()
+added		: LoadAnimMesh()
+added		: AntiAlias()
+
+
+09-13-2012 - v0.15
+added		: TEntity.EntityClass()
+added		: EntityClass()
+added		: TCamera.CameraZoom()
+added		: CameraZoom()
+added		: TOgre.getMouseZSpeed()
+added		: MouseZSpeed()
+changed		: Die Entity-Typen Liste entspricht nun der von Blitz3D
+fixed		: Der Entity-Typ wurde nicht immer korrekt gesichert
+
+
+09-12-2012 - v0.14
+added		: TLight.LightDiffuseColor()
+added		: TLight.LightRange()
+added		: TLight.LightConeAngles()
+added		: LightColor()
+added		: LightRange()
+added		: LightConeAngles()
+added		: TCamera.CameraRange()
+added		: TCamera.CameraProjMode()
+added		: CameraRange()
+added		: CameraProjMode()
+added		: TEntity.EntityX()
+added		: TEntity.EntityY()
+added		: TEntity.EntityZ()
+added		: TEntity.EntityPitch()
+added		: TEntity.EntityYaw()
+added		: TEntity.EntityRoll()
+added		: EntityX()
+added		: EntityY()
+added		: EntityZ()
+added		: EntityPitch()
+added		: EntityYaw()
+added		: EntityRoll()
+
+
+09-07-2012 - v0.13
+added		: TMesh.LoadMesh()
+added		: TLight.CreateLight()
+added		: TOgre.AmbientLight()
+added		: TOgre.addResourceLocation()
+added		: LoadMesh()
+added		: CreateLight()
+added		: AmbientLight()
+added		: SetRenderer()
+added		: isMouseDown()
+fixed		: TurnEntity()
+
+
+09-05-2012 - v0.12
+added		: TEntity.TranslateEntity()
+added		: TCamera.CreateCamera()
+added		: TCamera.CameraClsColor()
+added		: CreateCamera()
+added		: CameraClsColor()
+added		: TranslateEntity()
+changed		: parameter "global" added to PositionEntity()
+changed		: parameter "global" added to RotateEntity()
+
+
+09-04-2012 - v0.11
+added		: TEntity.EntityParent()
+added		: TEntity.PositionEntity()
+added		: TEntity.RotateEntity()
+added		: TEntity.MoveEntity()
+added		: TEntity.TurnEntity()
+added		: EntityParent()
+added		: PositionEntity()
+added		: RotateEntity()
+added		: MoveEntity()
+added		: TurnEntity()
+
+
+09-03-2012 - v0.10
+added		: TOgre.Graphics3D()
+added		: TOgre.EndGraphics3D()
+added		: TOgre.RenderWorld()
+added		: Graphics3D()
+added		: EndGraphics3D()
+added		: RenderWorld()
+added		: WinTitle()
+changed		: start to rewrite the code with Ogre3D V1.8

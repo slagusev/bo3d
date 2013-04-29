@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<head>
+	<title>bo3D / Ogre3D Wrapper</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+	
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#content ul ul').hide();
+			$('#content ul li').click(function(){
+				//$('#complete_list ul').slideUp();
+				$('> ul', this).slideToggle();
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="bg">
+<div id="page">
+	<div id="header">
+		<img src="img/logo.png" />
+	</div>
+	<div id="main">
+		<div id="left">
+			<ul class="flat_list">
+				<li class="status01"><strong>complete</strong></li>
+				<li class="status02"><strong>faulty / incomplete</strong></li>
+				<li class="status03"><strong>not implemented yet</strong></li>
+				<li class="status04"><strong>antiquated</strong></li>
+				<li class="status05"><strong>works differently</strong></li>
+			</ul>
+		</div>
+		
+		<div id="content">
+			<ul class="flat_list" id="complete_list">
+				<li><strong>Global</strong> 
+					<ul>
+						<li class="status01">Graphics3D</li>
+						<li class="status04">Dither</li>
+						<li class="status04">WBuffer</li>
+						<li class="status01">AntiAlias</li>
+						<li class="status02">Wireframe</li>
+						<li class="status04">HWMultiTex</li>
+						<li class="status01">AmbientLight</li>
+						<li class="status03">ClearCollisions</li>
+						<li class="status03">Collisions</li>
+						<li class="status03">UpdateWorld</li>
+						<li class="status03">CaptureWorld</li>
+						<li class="status01">RenderWorld</li>
+						<li class="status03">ClearWorld</li>
+						<li class="status04">LoaderMatrix</li>
+						<li class="status01">TrisRendered</li>
+					</ul>
+				</li>
+				
+				<li><strong>Texture</strong> 
+					<ul>
+						<li class="status03">CreateTexture</li>
+						<li class="status03">LoadTexture</li>
+						<li class="status03">LoadAnimTexture</li>
+						<li class="status03">FreeTexture</li>
+						<li class="status03">TextureBlend</li>
+						<li class="status03">TextureCoords</li>
+						<li class="status03">ScaleTexture</li>
+						<li class="status03">PositionTexture</li>
+						<li class="status03">RotateTexture</li>
+						<li class="status03">TextureWidth</li>
+						<li class="status03">TextureHeight</li>
+						<li class="status03">TextureBuffer</li>
+						<li class="status03">TextureName</li>
+						<li class="status03">GetBrushTexture</li>
+						<li class="status03">ClearTextureFilters</li>
+						<li class="status03">TextureFilter</li>
+						<li class="status03">SetCubeFace</li>
+						<li class="status03">SetCubeMode</li>
+					</ul>
+				</li>
+				
+				<li><strong>Brush</strong>
+					<ul>
+						<li class="status03">CreateBrush</li>
+						<li class="status03">LoadBrush</li>
+						<li class="status03">FreeBrush</li>
+						<li class="status03">BrushColor</li>
+						<li class="status03">BrushAlpha</li>
+						<li class="status03">BrushShininess</li>
+						<li class="status03">BrushTexture</li>
+						<li class="status03">BrushBlend</li>
+						<li class="status03">BrushFX</li>
+						<li class="status03">GetEntityBrush</li>
+						<li class="status03">GetSurfaceBrush</li>
+					</ul>
+				</li>
+				
+				<li><strong>Mesh</strong>
+					<ul>
+						<li class="status03">CreateMesh</li>
+						<li class="status01">LoadMesh</li>
+						<li class="status01">LoadAnimMesh</li>
+						<li class="status01">CreateCube</li>
+						<li class="status01">CreateSphere</li>
+						<li class="status03">CreateCylinder</li>
+						<li class="status03">CreateCone</li>
+						<li class="status03">CopyMesh</li>
+						<li class="status03">AddMesh</li>
+						<li class="status03">FlipMesh</li>
+						<li class="status03">PaintMesh</li>
+						<li class="status03">LightMesh</li>
+						<li class="status03">FitMesh</li>
+						<li class="status03">ScaleMesh</li>
+						<li class="status03">RotateMesh</li>
+						<li class="status03">PositionMesh</li>
+						<li class="status03">UpdateNormals</li>
+						<li class="status03">MeshesIntersect</li>
+						<li class="status03">MeshWidth</li>
+						<li class="status03">MeshHeight</li>
+						<li class="status03">MeshDepth</li>
+						<li class="status03">CountSurfaces</li>
+						<li class="status03">GetSurface</li>
+					</ul>
+				</li>
+				
+				<li><strong>Surface</strong>
+					<ul>
+						<li class="status03">CreateSurface</li>
+						<li class="status03">PaintSurface</li>
+						<li class="status03">ClearSurface</li>
+						<li class="status03">FindSurface</li>
+						<li class="status03">AddVertex</li>
+						<li class="status03">AddTriangle</li>
+						<li class="status03">VertexCoords</li>
+						<li class="status03">VertexNormal</li>
+						<li class="status03">VertexColor</li>
+						<li class="status03">VertexTexCoords</li>
+						<li class="status03">CountVertices</li>
+						<li class="status03">CountTriangles</li>
+						<li class="status03">VertexX</li>
+						<li class="status03">VertexY</li>
+						<li class="status03">VertexZ</li>
+						<li class="status03">VertexNX</li>
+						<li class="status03">VertexNY</li>
+						<li class="status03">VertexNZ</li>
+						<li class="status03">VertexRed</li>
+						<li class="status03">VertexGreen</li>
+						<li class="status03">VertexBlue</li>
+						<li class="status03">VertexAlpha</li>
+						<li class="status03">VertexU</li>
+						<li class="status03">VertexV</li>
+						<li class="status03">VertexW</li>
+						<li class="status03">TriangleVertex</li>
+					</ul>
+				</li>
+				
+				<li><strong>Camera</strong>
+					<ul>
+						<li class="status01">CreateCamera</li>
+						<li class="status01">CameraProjMode</li>
+						<li class="status03">CameraFogMode</li>
+						<li class="status03">CameraFogRange</li>
+						<li class="status03">CameraFogColor</li>
+						<li class="status03">CameraViewport</li>
+						<li class="status03">CameraClsMode</li>
+						<li class="status01">CameraClsColor</li>
+						<li class="status01">CameraRange</li>
+						<li class="status01">CameraZoom</li>
+						<li class="status03">CameraPick</li>
+						<li class="status03">PickedX</li>
+						<li class="status03">PickedY</li>
+						<li class="status03">PickedZ</li>
+						<li class="status03">PickedNX</li>
+						<li class="status03">PickedNY</li>
+						<li class="status03">PickedNZ</li>
+						<li class="status03">PickedTime</li>
+						<li class="status03">PickedEntity</li>
+						<li class="status03">PickedSurface</li>
+						<li class="status03">PickedTriangle</li>
+						<li class="status03">CameraProject</li>
+						<li class="status03">ProjectedX</li>
+						<li class="status03">ProjectedY</li>
+						<li class="status03">ProjectedZ</li>
+						<li class="status03">EntityInView</li>
+					</ul>
+				</li>
+				
+				<li><strong>Light</strong>
+					<ul>
+						<li class="status01">CreateLight</li>
+						<li class="status01">LightRange</li>
+						<li class="status01">LightColor</li>
+						<li class="status01">LightConeAngles</li>
+					</ul>
+				</li>
+				
+				<li><strong>Pivot</strong>
+					<ul>
+						<li class="status03">CreatePivot</li>
+					</ul>
+				</li>
+				
+				<li><strong>Sprite</strong>
+					<ul>
+						<li class="status03">CreateSprite</li>
+						<li class="status03">LoadSprite</li>
+						<li class="status03">RotateSprite</li>
+						<li class="status03">ScaleSprite</li>
+						<li class="status03">HandleSprite</li>
+						<li class="status03">SpriteViewMode</li>
+					</ul>
+				</li>
+				
+				<li><strong>MD2</strong>
+					<ul>
+						<li class="status04">LoadMD2</li>
+						<li class="status04">AnimateMD2</li>
+						<li class="status04">MD2AnimTime</li>
+						<li class="status04">MD2AnimLength</li>
+						<li class="status04">MD2Animating</li>
+					</ul>
+				</li>
+				
+				<li><strong>BSP</strong>
+					<ul>
+						<li class="status03">LoadBSP</li>
+						<li class="status03">BSPAmbientLight</li>
+						<li class="status03">BSPLighting</li>
+					</ul>
+				</li>
+				
+				<li><strong>Plane</strong>
+					<ul>
+						<li class="status01">CreatePlane</li>
+					</ul>
+				</li>
+				
+				<li><strong>Mirror</strong>
+					<ul>
+						<li class="status03">CreateMirror</li>
+					</ul>
+				</li>
+				
+				<li><strong>Terrain</strong>
+					<ul>
+						<li class="status03">CreateTerrain</li>
+						<li class="status03">LoadTerrain</li>
+						<li class="status03">TerrainSize</li>
+						<li class="status03">TerrainDetail</li>
+						<li class="status03">TerrainShading</li>
+						<li class="status03">TerrainHeight</li>
+						<li class="status03">ModifyTerrain</li>
+						<li class="status03">TerrainX</li>
+						<li class="status03">TerrainY</li>
+						<li class="status03">TerrainZ</li>
+					</ul>
+				</li>
+				
+				<li><strong>Listener / Audio</strong>
+					<ul>
+						<li class="status03">CreateListener</li>
+						<li class="status03">Load3DSound</li>
+						<li class="status03">EmitSound</li>
+					</ul>
+				</li>
+				
+				<li><strong>Entity Movement</strong>
+					<ul>
+						<li class="status03">ScaleEntity</li>
+						<li class="status01">PositionEntity</li>
+						<li class="status01">MoveEntity</li>
+						<li class="status01">TranslateEntity</li>
+						<li class="status01">RotateEntity</li>
+						<li class="status01">TurnEntity</li>
+						<li class="status01">PointEntity</li>
+						<li class="status03">AlignToVector</li>
+					</ul>
+				</li>
+				
+				<li><strong>Entity Animation</strong>
+					<ul>
+						<li class="status03">LoadAnimSeq</li>
+						<li class="status03">SetAnimKey</li>
+						<li class="status03">AddAnimSeq</li>
+						<li class="status03">ExtractAnimSeq</li>
+						<li class="status03">Animate</li>
+						<li class="status03">SetAnimTime</li>
+						<li class="status03">AnimSeq</li>
+						<li class="status03">AnimLength</li>
+						<li class="status03">AnimTime</li>
+						<li class="status03">Animating</li>
+					</ul>
+				</li>
+				
+				<li><strong>Entity Control</strong>
+					<ul>
+						<li class="status01">FreeEntity</li>
+						<li class="status03">CopyEntity</li>
+						<li class="status03">EntityColor</li>
+						<li class="status03">EntityAlpha</li>
+						<li class="status03">EntityShininess</li>
+						<li class="status03">EntityTexture</li>
+						<li class="status03">EntityBlend</li>
+						<li class="status03">EntityFX</li>
+						<li class="status03">EntityAutoFade</li>
+						<li class="status03">PaintEntity</li>
+						<li class="status03">EntityOrder</li>
+						<li class="status01">ShowEntity</li>
+						<li class="status01">HideEntity</li>
+						<li class="status01">NameEntity</li>
+						<li class="status01">EntityParent</li>
+						<li class="status03">GetParent</li>
+					</ul>
+				</li>
+				
+				<li><strong>Entity State</strong>
+					<ul>
+						<li class="status01">EntityX</li>
+						<li class="status01">EntityY</li>
+						<li class="status01">EntityZ</li>
+						<li class="status01">EntityRoll</li>
+						<li class="status01">EntityYaw</li>
+						<li class="status01">EntityPitch</li>
+						<li class="status01">EntityClass</li>
+						<li class="status03">EntityName</li>
+						<li class="status02">CountChildren</li>
+						<li class="status02">GetChild</li>
+						<li class="status03">FindChild</li>
+						<li class="status03">EntityPick</li>
+						<li class="status03">LinePick</li>
+						<li class="status03">EntityVisible</li>
+						<li class="status03">EntityDistance</li>
+						<li class="status03">DeltaYaw</li>
+						<li class="status03">DeltaPitch</li>
+						<li class="status03">TFormPoint</li>
+						<li class="status03">TFormVector</li>
+						<li class="status03">TFormNormal</li>
+						<li class="status03">TFormedX</li>
+						<li class="status03">TFormedY</li>
+						<li class="status03">TFormedZ</li>
+						<li class="status03">GetMatElement</li>
+					</ul>
+				</li>
+				
+				<li><strong>Entity Collision</strong>
+					<ul>
+						<li class="status03">ResetEntity</li>
+						<li class="status03">EntityRadius</li>
+						<li class="status03">EntityBox</li>
+						<li class="status03">EntityType</li>
+						<li class="status03">EntityPickMode</li>
+						<li class="status03">EntityCollided</li>
+						<li class="status03">CountCollisions</li>
+						<li class="status03">CollisionX</li>
+						<li class="status03">CollisionY</li>
+						<li class="status03">CollisionZ</li>
+						<li class="status03">CollisionNX</li>
+						<li class="status03">CollisionNY</li>
+						<li class="status03">CollisionNZ</li>
+						<li class="status03">CollisionTime</li>
+						<li class="status03">CollisionEntity</li>
+						<li class="status03">CollisionSurface</li>
+						<li class="status03">CollisionTriangle</li>
+						<li class="status03">GetEntityType</li>
+					</ul>
+				</li>
+				
+				<li><strong>3D Maths</strong>
+					<ul>
+						<li class="status03">VectorYaw</li>
+						<li class="status03">VectorPitch</li>
+					</ul>
+				</li>
+				
+				<li><strong>Graphics Mode</strong>
+					<ul>
+						<li class="status03">CountGfxModes3D</li>
+						<li class="status03">GfxMode3D</li>
+						<li class="status03">GfxMode3DExists</li>
+						<li class="status04">GfxDriver3D</li>
+						<li class="status05">GfxDriverCaps3D</li>
+						<li class="status04">Windowed3D</li>
+						<li class="status04">HWTexUnits</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="right">
+			<span class="small">
+				Background Image from <a href="http://www.torchlight2game.com/" target="_blank">
+					<strong>Torchlight 2</strong>
+				</a> 
+				 ... a Ogre3D Game
+			</span>
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+	<div id="footer">
+	
+	</div>
+</div>
+</div>
+</body>
